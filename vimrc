@@ -65,6 +65,7 @@ set expandtab
 "--------------"
 au BufWinLeave * silent! mkview
 au BufWinEnter * silent! loadview
+au FileType c,cpp,java,py,rb au BufWritePre <buffer> :%s/\s\+$//e
 
 "-------------------------"
 " Status Line Preferences "
