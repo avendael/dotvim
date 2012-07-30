@@ -1,0 +1,2 @@
+zenburn.vba: call delete('bundle/zenburn/colors/zenburn.vim')
+zenburn.vba: call delete('/Users/avendael/.vim/bundle/zenburn/colors/zenburn.vim')

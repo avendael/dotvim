@@ -1,7 +1,9 @@
 "----------"
 " Pathogen "
 "----------"
-runtime bundle/vim-pathogen/autoload/pathogen.vim
+set nocompatible "Pathogen does not work in compatibility mode
+filetype off "Since some distributions turn this on during startup
+runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
@@ -9,7 +11,6 @@ call pathogen#helptags()
 " General Settings "
 "------------------"
 set t_Co=256
-set nocompatible
 set title
 set hidden
 set smartcase
@@ -37,8 +38,7 @@ set showcmd
 runtime macros/matchit.vim
 syntax on
 filetype on
-filetype indent on
-filetype plugin on
+filetype plugin indent on
 colorscheme zenburn
 
 "------------"
