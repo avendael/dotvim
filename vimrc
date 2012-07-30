@@ -36,18 +36,20 @@ set listchars=tab:>-,trail:.,eol:$
 set backspace=indent,eol,start
 set showcmd
 runtime macros/matchit.vim
-syntax on
 filetype on
 filetype plugin indent on
-colorscheme zenburn
+syntax on
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
 
 "------------"
 " Tabulation "
 "------------"
-set tabstop=2
+set tabstop=4
 set expandtab
-set softtabstop=2
-set shiftwidth=2
+set softtabstop=4
+set shiftwidth=4
 
 "--------------"
 " Autocommands "
