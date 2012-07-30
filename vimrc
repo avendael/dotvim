@@ -11,17 +11,22 @@ call pathogen#helptags()
 " General Settings "
 "------------------"
 set t_Co=256
+set encoding=utf-8
 set title
 set hidden
+set ignorecase
 set smartcase
 set incsearch
+set hlsearch
+set showmatch
 set number
 set smartindent
 set scrolloff=3
 set wildmenu
+set showmode
 set wildmode=list:longest
 set history=1000
-set textwidth=80
+set textwidth=79
 set visualbell
 set cursorcolumn
 set cursorline
@@ -35,21 +40,25 @@ set directory=~/.vim/tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set listchars=tab:>-,trail:.,eol:$
 set backspace=indent,eol,start
 set showcmd
+set modelines=0
 runtime macros/matchit.vim
-filetype on
 filetype plugin indent on
 syntax on
+
+"--------------"
+" Color Themes "
+"--------------"
 let g:solarized_termcolors=256
 set background=dark
-colorscheme solarized
+colorscheme zenburn
 
 "------------"
 " Tabulation "
 "------------"
 set tabstop=4
-set expandtab
 set softtabstop=4
 set shiftwidth=4
+set expandtab
 
 "--------------"
 " Autocommands "
